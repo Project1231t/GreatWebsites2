@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GreatWebSite - Создание сайтов</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+        :root {
+            --orange: #FF6B35;
+            --dark: #2D2D2D;
+            --blue: #00B4D8;
+            --sky: #90E0EF;
+        }
+
+        body {
+            margin: 0;
+            padding: 15px;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, var(--dark), #1A1A1A);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-top: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(45deg, var(--blue), var(--sky));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .tg-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--orange);
+            padding: 12px 25px;
+            border-radius: 25px;
+            z-index: 1000;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .tg-fixed a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            display: block;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .price-card {
+            background: rgba(45, 45, 45, 0.95);
+            border: 2px solid var(--orange);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, var(--orange), #FF4500);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            margin-top: 15px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            transition: 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        h2 {
+            color: var(--orange);
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h3 {
+            color: var(--blue);
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+
+        .glow {
+            text-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
+        }
+
+        /* Мобильная адаптация */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .price-card {
+                padding: 15px;
+                margin: 10px 0;
+            }
+            
+            .btn {
+                font-size: 14px;
+                padding: 12px;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+            
+            h3 {
+                font-size: 1.5em;
+            }
+            
+            .tg-fixed {
+                bottom: 10px;
+                right: 10px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>GreatWebSite</h1>
+    </div>
+
+    <div class="tg-fixed">
+        <a href="https://t.me/GreatWebSite" target="_blank">Заказать</a>
+    </div>
+
+    <div class="container">
+        <div class="price-card">
+            <h2>🚀 Базовый Сайт</h2>
+            <p>Идеально для старта вашего проекта</p>
+            <h3 class="glow">4 000 ₽</h3>
+            <a href="https://t.me/GreatWebSite" class="btn" target="_blank">Выбрать тариф</a>
+        </div>
+
+        <div class="price-card">
+            <h2>💼 Бизнес Сайт</h2>
+            <p>Профессиональное решение</p>
+            <h3 class="glow">5 000 ₽</h3>
+            <a href="https://t.me/GreatWebSite" class="btn" target="_blank">Выбрать тариф</a>
+        </div>
+    </div>
+</body>
+</html>
